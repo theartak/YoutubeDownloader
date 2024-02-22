@@ -53,6 +53,10 @@
             "YoutubeExplode": {
               "target": "Package",
               "version": "[6.3.12, )"
+            },
+            "YoutubeExplode.Converter": {
+              "target": "Package",
+              "version": "[6.3.12, )"
             }
           },
           "imports": [

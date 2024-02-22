@@ -16,16 +16,13 @@ namespace YouTubeDownloader
             try
             {
                 // Determine whether the directory exists.
-                if (Directory.Exists(outputDirectory))
+                if (!Directory.Exists(outputDirectory))
                 {
-                    Console.WriteLine("That path exists already.");
-                    return;
+                    // Try to create the directory.
+                    DirectoryInfo di = Directory.CreateDirectory(outputDirectory);
+                    Console.WriteLine("The directory was created successfully at {0}.",
+                        Directory.GetCreationTime(outputDirectory));
                 }
-
-                // Try to create the directory.
-                DirectoryInfo di = Directory.CreateDirectory(outputDirectory);
-                Console.WriteLine("The directory was created successfully at {0}.",
-                    Directory.GetCreationTime(outputDirectory));
 
                 // Delete the directory.
                 // di.Delete();
@@ -45,7 +42,7 @@ namespace YouTubeDownloader
             }
             finally
             {
-                Console.WriteLine("Success!");
+                // Console.WriteLine("Success!");
             }
 
             Console.WriteLine("Input link: ");
@@ -84,7 +81,7 @@ namespace YouTubeDownloader
             // Get all available muxed streams
             var streamManifest = await youtube.Videos.Streams.GetManifestAsync(video.Id);
             var muxedStreams = streamManifest.GetMuxedStreams().OrderByDescending(s => s.VideoQuality).ToList();
-
+            
             if (muxedStreams.Any())
             {
                 var streamInfo = muxedStreams.First();

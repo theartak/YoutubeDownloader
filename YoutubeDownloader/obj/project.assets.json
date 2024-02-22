@@ -18,6 +18,19 @@
           }
         }
       },
+      "CliWrap/3.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/CliWrap.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/CliWrap.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SonarAnalyzer.CSharp/9.20.0.85982": {
         "type": "package"
       },
@@ -58,6 +71,23 @@
             "related": ".xml"
           }
         }
+      },
+      "YoutubeExplode.Converter/6.3.12": {
+        "type": "package",
+        "dependencies": {
+          "CliWrap": "3.6.4",
+          "YoutubeExplode": "6.3.12"
+        },
+        "compile": {
+          "lib/net5.0/YoutubeExplode.Converter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/YoutubeExplode.Converter.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
@@ -85,6 +115,26 @@
         "lib/netstandard2.0/AngleSharp.dll",
         "lib/netstandard2.0/AngleSharp.xml",
         "logo.png"
+      ]
+    },
+    "CliWrap/3.6.4": {
+      "sha512": "KVGVZlR0GWgN3Xr88oZMSzYu38TXIogwLz588e6wku3mIfg6lPchxpYWtZSZfurpTY63ANF61xWp8EZF3jkN4g==",
+      "type": "package",
+      "path": "cliwrap/3.6.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cliwrap.3.6.4.nupkg.sha512",
+        "cliwrap.nuspec",
+        "favicon.png",
+        "lib/net462/CliWrap.dll",
+        "lib/net462/CliWrap.xml",
+        "lib/netcoreapp3.0/CliWrap.dll",
+        "lib/netcoreapp3.0/CliWrap.xml",
+        "lib/netstandard2.0/CliWrap.dll",
+        "lib/netstandard2.0/CliWrap.xml",
+        "lib/netstandard2.1/CliWrap.dll",
+        "lib/netstandard2.1/CliWrap.xml"
       ]
     },
     "SonarAnalyzer.CSharp/9.20.0.85982": {
@@ -170,12 +220,35 @@
         "youtubeexplode.6.3.12.nupkg.sha512",
         "youtubeexplode.nuspec"
       ]
+    },
+    "YoutubeExplode.Converter/6.3.12": {
+      "sha512": "bqwqbixrrip6rOsKQCDQ1IBLgamZo9SIkAcNyX/3jcNK5nMY/t6tRio7llct+HHIVAGMIEc1brczDnKgz8ATaw==",
+      "type": "package",
+      "path": "youtubeexplode.converter/6.3.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "favicon.png",
+        "lib/net461/YoutubeExplode.Converter.dll",
+        "lib/net461/YoutubeExplode.Converter.xml",
+        "lib/net5.0/YoutubeExplode.Converter.dll",
+        "lib/net5.0/YoutubeExplode.Converter.xml",
+        "lib/netcoreapp3.1/YoutubeExplode.Converter.dll",
+        "lib/netcoreapp3.1/YoutubeExplode.Converter.xml",
+        "lib/netstandard2.0/YoutubeExplode.Converter.dll",
+        "lib/netstandard2.0/YoutubeExplode.Converter.xml",
+        "lib/netstandard2.1/YoutubeExplode.Converter.dll",
+        "lib/netstandard2.1/YoutubeExplode.Converter.xml",
+        "youtubeexplode.converter.6.3.12.nupkg.sha512",
+        "youtubeexplode.converter.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "SonarAnalyzer.CSharp >= 9.20.0.85982",
-      "YoutubeExplode >= 6.3.12"
+      "YoutubeExplode >= 6.3.12",
+      "YoutubeExplode.Converter >= 6.3.12"
     ]
   },
   "packageFolders": {
@@ -229,6 +302,10 @@
             "version": "[9.20.0.85982, )"
           },
           "YoutubeExplode": {
+            "target": "Package",
+            "version": "[6.3.12, )"
+          },
+          "YoutubeExplode.Converter": {
             "target": "Package",
             "version": "[6.3.12, )"
           }
