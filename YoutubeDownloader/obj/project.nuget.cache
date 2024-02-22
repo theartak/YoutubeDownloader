@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "eBzavTxcLxks2yAI2K6ierEenieSK9P5yel3L+J+Xaf4H4R52dL3oxM+OQwQuVmtmBqPxmQtqyCnDmOX7fsXEQ==",
+  "dgSpecHash": "mr5OeNYOvLZOuVu16dHkBXEGEiwe6VSOuNgrm4b7EB/8Daun3YwMmoCErvIWjIpuk2VTyYuopLf1bSnqTpg6Xg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Artak\\RiderProjects\\YoutubeDownloader\\YoutubeDownloader\\YoutubeDownloader.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Artak\\.nuget\\packages\\anglesharp\\1.0.7\\anglesharp.1.0.7.nupkg.sha512",
+    "C:\\Users\\Artak\\.nuget\\packages\\sonaranalyzer.csharp\\9.20.0.85982\\sonaranalyzer.csharp.9.20.0.85982.nupkg.sha512",
     "C:\\Users\\Artak\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0\\system.text.encoding.codepages.8.0.0.nupkg.sha512",
     "C:\\Users\\Artak\\.nuget\\packages\\youtubeexplode\\6.3.12\\youtubeexplode.6.3.12.nupkg.sha512"
   ],

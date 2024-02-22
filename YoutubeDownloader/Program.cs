@@ -4,21 +4,52 @@ namespace YouTubeDownloader
 {
     class Program
     {
-        static async Task Main(string[] args)
+        protected Program()
+        {
+        }
+
+        private static async Task Main()
         {
             // Set the output directory path here
-            string outputDirectory = @"C:\Users\Artak\Downloads";
+            string outputDirectory = @"D:\YoutubeDownloader";
 
-            // // List of YouTube video URLs to download
-            // List<string> videoUrls = new List<string>
-            // {
-            //     
-            // };
-            
-            // videoUrls.Add(ytLink);
+            try
+            {
+                // Determine whether the directory exists.
+                if (Directory.Exists(outputDirectory))
+                {
+                    Console.WriteLine("That path exists already.");
+                    return;
+                }
+
+                // Try to create the directory.
+                DirectoryInfo di = Directory.CreateDirectory(outputDirectory);
+                Console.WriteLine("The directory was created successfully at {0}.",
+                    Directory.GetCreationTime(outputDirectory));
+
+                // Delete the directory.
+                // di.Delete();
+                // Console.WriteLine("The directory was deleted successfully.");
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine("The process failed: " + e.Message);
+            }
+            catch (UnauthorizedAccessException e)
+            {
+                Console.WriteLine("The process failed: " + e.Message);
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine("The process failed: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Success!");
+            }
 
             Console.WriteLine("Input link: ");
-            
+
             try
             {
                 string ytLink = Console.ReadLine();

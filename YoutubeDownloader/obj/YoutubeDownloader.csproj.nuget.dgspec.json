@@ -44,6 +44,12 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.20.0.85982, )"
+            },
             "YoutubeExplode": {
               "target": "Package",
               "version": "[6.3.12, )"

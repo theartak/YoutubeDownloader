@@ -16,3 +16,4 @@ C:\Users\Artak\RiderProjects\YoutubeDownloader\YoutubeDownloader\obj\Debug\net8.
 C:\Users\Artak\RiderProjects\YoutubeDownloader\YoutubeDownloader\obj\Debug\net8.0\YoutubeDownloader.pdb
 C:\Users\Artak\RiderProjects\YoutubeDownloader\YoutubeDownloader\obj\Debug\net8.0\YoutubeDownloader.genruntimeconfig.cache
 C:\Users\Artak\RiderProjects\YoutubeDownloader\YoutubeDownloader\obj\Debug\net8.0\ref\YoutubeDownloader.dll
+C:\Users\Artak\RiderProjects\YoutubeDownloader\YoutubeDownloader\obj\Debug\net8.0\YoutubeDownloader.sourcelink.json
